@@ -1,0 +1,14 @@
+{
+  "name": "myp",
+  "version": "1.0.0",
+  "description": "My first Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o Portfolio/css/ --recursive"
+  },
+  "author": "Xinhe Yang",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
