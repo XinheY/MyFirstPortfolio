@@ -1,32 +1,5 @@
-$primary-color: #444;
-$secondary-color: #000000;
-$backimageon: true;
-$backimage: url(../image/hacker2.jpg);
-$backopacity: 0.6;
-
-@mixin easeout {
-  transition: all 0.5s ease-out;
-}
-
-@mixin background {
-  @if backimageon {
-    &#bgimg {
-      background: $backimage;
-      background-attachment: fixed;
-      background-size: cover;
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $backopacity);
-      }
-    }
-  }
-}
+@import "config";
+@import "menu";
 
 body {
   @include background;
@@ -54,8 +27,18 @@ h3 {
   }
 
   &.heading2 {
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-left: 5rem;
     padding: 0.2rem 1rem;
+    // color: $third-color;
+    background: lighten($primary-color, 2), 0.5;
+  }
+
+  &.heading3 {
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    padding: 0.2rem 1rem;
+    font-size: 2rem;
     background: lighten($primary-color, 2), 0.5;
   }
 }
@@ -72,7 +55,7 @@ header {
 }
 
 .text {
-  color: $secondary-color;
+  color: $third-color;
 }
 
 main {
