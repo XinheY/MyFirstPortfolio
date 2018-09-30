@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector(".Bmenu");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
-const menuib = document.querySelector(".imageback");
+const menuib = document.querySelector(".menu-back");
 const Items = document.querySelectorAll(".nav-item");
 
 let showMenu = false;
